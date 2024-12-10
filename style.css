@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(IMAGES/pexels-shotbyrain-3934623.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+.container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between logo and nav links */
+    padding: 0 10px; /* Padding on the sides */
+}
+
+.logo {
+    width: 500px;
+    height: auto;
+    transition: transform 1s ease;
+    perspective: 1000px; /* Required for 3D effect */
+}
+
+
+.logo:hover{
+
+    transform: rotateY(100deg); /* Tilt effect */
+}
+
+
+nav {
+    display: flex; /* Use flexbox for nav items */
+    margin-left: auto; /* Push navigation to the right */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Display items in a row */
+}
+
+nav ul li {
+    margin-left: 100px; /* Space between list items */
+}
+nav ul li a {
+    
+    text-decoration:rgb(5, 5, 163) underline; /* Remove underline from links */
+    color: #f2f4f4ee; /* Link color */
+    font-weight: bold; /* Make the text bold */
+    transition: 0.5s;
+}
+nav ul li a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+}
+
+.image {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.headline {
+    margin-top: 5px; /* Space between image and headline */
+    font-size: 20px; /* Adjust font size as needed */
+    color: #ff5733;; /* Change text color if needed */
+    opacity: 0; /* Start with a hidden state */
+    transform: translateY(20px); /* Start slightly lower */
+    animation: fadeInUp 0.6s forwards; /* Apply the animation */
+}
+.header-text p{
+    
+    font-size: 20px ;
+}
+.header-text h1{
+    font-size: 30px;
+    color: #9ac4f1;
+}
+.header-text h1 span{
+    color:#ff5733
+
+}
+#ABOUT {
+    padding: 40px 0; /* Space above and below */
+}
+
+.row {
+    display: flex; /* Flexbox for columns */
+    justify-content: space-between; /* Space between columns */
+    flex-wrap: wrap; /* Wrap for responsive design */
+}
+
+.ABOUT-col-1, .ABOUT-col-2 {
+    flex: 1; /* Each column takes equal space */
+    margin: 10px; /* Space between columns */
+}
+
+.ABOUT-col-1 img, .ABOUT-col-2 img {
+    width: 500%; /* Full width of column */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+#about{
+    padding: 80px 0;
+    color: #ababab;
+} 
+.container {
+    text-align: left; /* Options: left, right, center, justify */
+}   
+.ABOUT-col-2 {
+
+    margin-left: 100px;  /* Adjusts left margin */
+    margin-top: 1px;   /* Adjusts top margin */
+}
+.ABOUT-col-2 h1{
+    font-size: 30px;
+    font-weight: 200;
+    text-decoration: blue underline;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #7388ea;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff5733;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-contents ul li span{
+    color: #3498db;
+    font-size: 14px;
+}
+.tab-contents{
+    display:none;
+
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*-----------------------services------------------*/
+
+#services{
+    padding: 30px 0;
+
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px.1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+#SERVICES .sub-title {
+    margin-bottom: 2px;
+    font-size: 30px;
+    font-weight: 200;
+    text-decoration: blue underline;
+}
+#SERVICES h2 {
+    font-size: 20px; /* Adjust the size as needed */
+    color: #3498db; /* Change this to your desired color */
+}
+
+#SERVICES p {
+    color: white; /* Set paragraph text to white */
+}
+.services-list div{
+    background: #262626;
+    padding: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 1s, transform 1s;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #036011f0;
+    transform: translate(-10px);
+}
+/*---------------------------portfolio-------------------------*/
+
+#PORTFOLIO{
+    padding: 50px 0;
+}
+#PORTFOLIO .sub-title {
+    margin-top: 50PX;
+    font-size: 30px;
+    font-weight: 200;
+    text-decoration: blue underline;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px.1fr));
+    grid-gap: 20px;
+    margin-top: 20px;
+
+}
+.work{
+    position:relative;
+    overflow: hidden;
+}
+.work img{
+   
+    width: 300px;
+    height: 300px;
+    display: block;
+    transition: transform 1s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #f0014d);
+    font-size: 14px;
+    transition: height 2s;
+}
+.layer h3{
+    font-size: 20px;
+    color: #3498db;
+   
+}
+.layer a{
+    margin-top: 20px;
+    color: #140101;
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 60px;
+    background: #f9f8f8;
+    width: 60px;
+    height: 60px;
+    border-radius: 0%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #f10d2b;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 1s;
+
+
+}
+.btn:hover{
+    background: #ff004f;
+}
+/*----------------------------contact-----------------------------*/
+
+#CONTACT .sub-title{
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 200;
+    text-decoration: blue underline;
+}
+.contact-left{
+    flex-basis: 35%;
+
+}
+
+.contact-right{
+    flex-basis: 60%;
+    
+}
+.contact-left p{
+    margin-top: 30px;
+    
+}
+.btn.btn2{
+    display: inline-block;
+    background: #f0014d;
+}
+.contact-right form{
+    width: 100%;
+
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+/*--------css for small screen-----------*/
+
+@media only screen and (max-width: 400px){
+    #header{
+        background-image: url(IMAGES/pexels-shotbyrain-3934623.jpg);
+    }
+    .header-text h1{
+        margin-top: 100%;
+        font-size: 16px;
+
+    }
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+
+.header-text {
+    transition: text-shadow 0.3s ease;
+}
+
+.header-text:hover {
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7); /* Add shadow on hover */
+}
